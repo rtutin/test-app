@@ -10,8 +10,17 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 2</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/tabs"></ion-back-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div id="container">
+      <ion-button [routerLink]="['page1']">Страница 1</ion-button>
+      <ion-button [routerLink]="['page2']">Страница 2</ion-button>
+      <ion-button [routerLink]="['page3']">Страница 3</ion-button>
+      <ion-button [routerLink]="['page4']">Страница 4</ion-button>
+      <ion-button [routerLink]="['page5']">Страница 5</ion-button>
+  </div>
 </ion-content>
